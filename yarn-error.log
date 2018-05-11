@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/bin/nodejs /usr/bin/yarn add promise-polyfill
+  /usr/bin/nodejs /usr/bin/yarn add wepy-async-function
 
 PATH: 
   /home/vagrant/.composer/vendor/bin:/home/vagrant/bin:/home/vagrant/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
@@ -33,13 +33,14 @@ npm manifest:
     "author": "luosilent@qq.com",
     "license": "MIT",
     "dependencies": {
+      "promise-polyfill": "^7.1.2",
       "redux": "^3.7.2",
       "redux-actions": "^2.2.1",
       "redux-promise": "^0.5.3",
-      "wepy-redux": "^1.5.3",
       "wepy": "^1.6.0",
       "wepy-async-function": "^1.4.4",
-      "wepy-com-toast": "^1.0.2"
+      "wepy-com-toast": "^1.0.2",
+      "wepy-redux": "^1.5.3"
     },
     "devDependencies": {
       "babel-eslint": "^7.2.1",
@@ -55,9 +56,9 @@ npm manifest:
       "eslint-plugin-html": "^2.0.1",
       "eslint-plugin-promise": "^3.5.0",
       "eslint-plugin-standard": "^2.0.1",
-      "wepy-eslint": "^1.5.3",
       "wepy-compiler-babel": "^1.5.1",
-      "wepy-compiler-less": "^1.3.10"
+      "wepy-compiler-less": "^1.3.10",
+      "wepy-eslint": "^1.5.3"
     }
   }
 
@@ -1639,6 +1640,10 @@ Lockfile:
   promise-polyfill@^6.0.2:
     version "6.1.0"
     resolved "http://registry.npm.taobao.org/promise-polyfill/download/promise-polyfill-6.1.0.tgz#dfa96943ea9c121fca4de9b5868cb39d3472e057"
+  
+  promise-polyfill@^7.1.2:
+    version "7.1.2"
+    resolved "http://registry.npm.taobao.org/promise-polyfill/download/promise-polyfill-7.1.2.tgz#ab05301d8c28536301622d69227632269a70ca3b"
   
   promise@^7.1.1:
     version "7.3.1"

@@ -4,7 +4,7 @@
 		"ignore": []
 	},
 	"setting": {
-		"urlCheck": true,
+		"urlCheck": false,
 		"es6": false,
 		"postcss": false,
 		"minified": false,
@@ -14,7 +14,7 @@
 	"libVersion": "1.9.98",
 	"appid": "wx9657c04e0c08db89",
 	"projectname": "larabbs-weapp",
-  "miniprogramRoot": "./dist",
+	"miniprogramRoot": "./dist",
 	"scripts": {},
 	"condition": {
 		"search": {
