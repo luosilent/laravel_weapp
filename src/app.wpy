@@ -66,9 +66,13 @@ export default class extends wepy.app {
   constructor () {
     super()
     this.use('requestfix')
+    this.use('promisify')
   }
 
   onLaunch() {
+    wepy.login().then(res => {
+      console.log('login: ', res)
+    })
   }
 }
 </script>
