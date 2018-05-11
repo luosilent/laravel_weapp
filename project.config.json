@@ -5,16 +5,17 @@
 	},
 	"setting": {
 		"urlCheck": true,
-		"es6": true,
-		"postcss": true,
-		"minified": true,
+		"es6": false,
+		"postcss": false,
+		"minified": false,
 		"newFeature": true
 	},
 	"compileType": "miniprogram",
 	"libVersion": "1.9.98",
 	"appid": "wx9657c04e0c08db89",
 	"projectname": "larabbs-weapp",
-	"isGameTourist": false,
+  "miniprogramRoot": "./dist",
+	"scripts": {},
 	"condition": {
 		"search": {
 			"current": -1,
@@ -26,6 +27,10 @@
 		},
 		"game": {
 			"currentL": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
 			"list": []
 		},
 		"miniprogram": {
