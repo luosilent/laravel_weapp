@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/bin/nodejs /usr/bin/yarn add wepy-async-function
+  /usr/bin/nodejs /usr/bin/yarn add promise-polyfill
 
 PATH: 
   /home/vagrant/.composer/vendor/bin:/home/vagrant/bin:/home/vagrant/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
@@ -38,7 +38,7 @@ npm manifest:
       "redux-actions": "^2.2.1",
       "redux-promise": "^0.5.3",
       "wepy": "^1.6.0",
-      "wepy-async-function": "^1.4.4",
+      "wepy-async-function": "^1.4.6",
       "wepy-com-toast": "^1.0.2",
       "wepy-redux": "^1.5.3"
     },
@@ -2028,7 +2028,7 @@ Lockfile:
       core-util-is "1.0.2"
       extsprintf "^1.2.0"
   
-  wepy-async-function@^1.4.4:
+  wepy-async-function@^1.4.6:
     version "1.4.6"
     resolved "http://registry.npm.taobao.org/wepy-async-function/download/wepy-async-function-1.4.6.tgz#b650c3d46ddea54404ba1e005e0b949897c69804"
     dependencies:
