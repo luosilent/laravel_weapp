@@ -34,13 +34,13 @@ page{
 <script>
 import wepy from 'wepy'
 import 'wepy-async-function'
-import 'wepy-async-function'
 import api from '@/utils/api'
 
 export default class extends wepy.app {
   config = {
     pages: [
       'pages/topics/index',
+      'pages/topics/show',
       'pages/users/me',
       'pages/users/edit',
       'pages/auth/login',
@@ -70,11 +70,10 @@ export default class extends wepy.app {
   }
   // 获取当前登录用户信息
   async getCurrentUser () {
-    // 如果用户未登录  
+    // 如果用户未登录
     if (!this.checkLogin()) {
       return null
     }
-
     // 从缓存中获取用户信息
     let user = wepy.getStorageSync('user')
 

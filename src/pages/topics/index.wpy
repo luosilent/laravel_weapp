@@ -98,7 +98,7 @@
     <view class="weui-panel weui-panel_access">
       <view class="weui-panel__bd">
         <repeat for="{{ topics }}" key="id" index="index" item="topic">
-          <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+            <navigator url="/pages/topics/show?id={{ topic.id }}" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
             <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
               <image class="weui-media-box__thumb avatar" src="{{ topic.user.avatar }}" />
             </view>
@@ -144,6 +144,19 @@
     computed = {
       currentCategoryId () {
         return this.currentCategory.id || 0
+      }
+    }
+    methods = {
+      toggle () {
+        this.categoryOpen = !this.categoryOpen
+      },
+      async changeCatgory (id = 0) {
+        // 找到选中的分类
+        this.currentCategory = id ? this.categories.find(category => category.id === id) : {}
+        // 点击以后关闭下拉列表
+        this.categoryOpen = false
+        this.$apply()
+        await this.getTopics(1, true)
       }
     }
     // 获取话题数据
@@ -222,19 +235,6 @@
       this.page = this.page + 1
       await this.getTopics(this.page)
       this.$apply()
-    }
-    methods = {
-      toggle () {
-        this.categoryOpen = !this.categoryOpen
-      },
-      async changeCatgory (id = 0) {
-        // 找到选中的分类
-        this.currentCategory = id ? this.categories.find(category => category.id === id) : {}
-        // 点击以后关闭下拉列表
-        this.categoryOpen = false
-        this.$apply()
-        await this.getTopics(1, true)
-      }
     }
   }
 </script>
