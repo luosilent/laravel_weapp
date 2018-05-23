@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/bin/nodejs /usr/bin/yarn add moment
+  /usr/bin/nodejs /usr/bin/yarn add wepy-plugin-replace wepy-plugin-imagemin wepy-eslint
 
 PATH: 
   /home/vagrant/.composer/vendor/bin:/home/vagrant/bin:/home/vagrant/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
@@ -33,6 +33,7 @@ npm manifest:
     "author": "luosilent@qq.com",
     "license": "MIT",
     "dependencies": {
+      "moment": "^2.22.1",
       "promise-polyfill": "^7.1.2",
       "redux": "^3.7.2",
       "redux-actions": "^2.2.1",
@@ -1529,6 +1530,10 @@ Lockfile:
     resolved "http://registry.npm.taobao.org/mkdirp/download/mkdirp-0.5.1.tgz#30057438eac6cf7f8c4767f38648d6697d75c903"
     dependencies:
       minimist "0.0.8"
+  
+  moment@^2.22.1:
+    version "2.22.1"
+    resolved "http://registry.npm.taobao.org/moment/download/moment-2.22.1.tgz#529a2e9bf973f259c9643d237fda84de3a26e8ad"
   
   ms@2.0.0:
     version "2.0.0"
