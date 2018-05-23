@@ -22,13 +22,20 @@ WePY 1.7+
 1. 克隆源代码
 克隆 larabbs-weapp 源代码到本地：
 
-    git clone git@github.com:summerblue/larabbs-weapp.git
+<pre><code>
+git clone git@github.com:summerblue/larabbs-weapp.git
+</code></pre>
+    
   
 2. 安装扩展包依赖
-
+    
+<pre><code>
     yarn
-    yarn global add wepy-cli
+yarn global add wepy-cli
+</code></pre>
     
 3. 编译
-
-    npm run build
+<pre><code>
+npm run build
+</code></pre>
+  
