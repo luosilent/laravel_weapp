@@ -30,7 +30,7 @@ git clone git@github.com:summerblue/larabbs-weapp.git
 2. 安装扩展包依赖
     
 <pre><code>
-    yarn
+yarn
 yarn global add wepy-cli
 </code></pre>
     
