@@ -25,7 +25,10 @@ WePY 1.7+
     git clone git@github.com:summerblue/larabbs-weapp.git
   
 2. 安装扩展包依赖
+
     yarn
     yarn global add wepy-cli
+    
 3. 编译
+
     npm run build
